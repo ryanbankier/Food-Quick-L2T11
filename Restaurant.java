@@ -20,7 +20,7 @@ public class Restaurant {
 	}
 	
 	// This method finds and returns the total of all meals ordered based on price and number meals ordered
-	public double findTotal() {
+	private double findTotal() {
 		double total = 0;
 		
 		// this for loop iterates through the MealOrder object list calculates the subtotal and adds it to total

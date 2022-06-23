@@ -34,7 +34,7 @@ public void invoice() {
 			inv.format("%s", "Order Number: "+ orderNum+"\r\n");
 			inv.format("%s","Customer: "+ cusName+"\r\n");
 			inv.format("%s","Email: "+ cusEmail+"\r\n");
-			inv.format("%s","Phone Number: "+ cusNum+"\r\n");
+			inv.format("%s","Phone Number: "+"+27 "+ cusNum+"\r\n");
 			inv.format("%s","Location: "+ cusCity+"\r\n");
 			inv.format("%s","\r\n");
 			inv.format("%s","You have ordered the following from "+ restName+" in "+restCity+"\r\n");
@@ -51,7 +51,7 @@ public void invoice() {
 			inv.format("%s","\r\n");
 			inv.format("%s",cusAddress+"\r\n");
 			inv.format("%s","\r\n");
-			inv.format("%s","If you need to contact the restaurant, their number is " +restNum);
+			inv.format("%s","If you need to contact the restaurant, their number is " +"+27 "+restNum);
 			
 			inv.close();
 			}

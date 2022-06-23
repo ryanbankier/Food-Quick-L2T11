@@ -224,14 +224,20 @@ public class Main {
 		while (isNum == false) {
 			String tempNum = JOptionPane.showInputDialog("Phone Number:");
 			if (isNumeric(tempNum)) {
-				if (tempNum.length() == 10) {
-					reNum = tempNum;
-					isNum = true;
-				} else if (tempNum.length() < 10) {
-					JOptionPane.showMessageDialog(frame, "Phone Number to Short");
-				} else {
-					JOptionPane.showMessageDialog(frame, "Phone Number to long");
+				if (tempNum.charAt(0) == '0') {
+					if (tempNum.length() == 10) {
+						reNum = tempNum;
+						isNum = true;
+					} else if (tempNum.length() < 10) {
+						JOptionPane.showMessageDialog(frame, "Phone Number to Short");
+					} else {
+						JOptionPane.showMessageDialog(frame, "Phone Number to long");
+					}
 				}
+				else {
+					JOptionPane.showMessageDialog(frame, "Number must start with '0'");
+				}
+				
 			} else {
 				JOptionPane.showMessageDialog(frame, "Not vaild input");
 			}

@@ -1,6 +1,5 @@
 # Food-Quick-L2T11
-HyperionDev Level 2 Task 11 - Capstone Refactoring
-Advanced JAVA Project 
+HyperionDev Level 2 Task 11 - Advanced JAVA Project 
 
 This JAVA project is a food ordering system using a standard JOptions user interface. 
 
